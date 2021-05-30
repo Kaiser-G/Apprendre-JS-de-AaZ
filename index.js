@@ -1,9 +1,33 @@
-let string = "je suis une chaine";
-let number = 24;
-let boolean = true;
-let array = ["je", "suis", 24, false];
-let object = {
-  prenom: "audrey",
-  age: 34,
-  ville: "bordeaux",
-};
+let total = 0;
+
+function addition(x) {
+  total += x;
+  return total;
+}
+
+function soustraction(x) {
+  total -= x;
+  return total;
+}
+
+function division(x) {
+  if (total === 0) {
+    return (total = x);
+  } else {
+    total /= x;
+    return total;
+  }
+}
+
+function multiplication(x) {
+  if (total === 0) {
+    return (total = x);
+  } else {
+    total *= x;
+    return total;
+  }
+}
+
+function reset() {
+  total = 0;
+}
